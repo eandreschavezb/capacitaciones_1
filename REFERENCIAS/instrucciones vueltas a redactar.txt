@@ -1,0 +1,34 @@
+Asegúrese de que su conexión a internet es estable y que su dispositivo es adecuado. 
+Las interrupciones en su conexión sean por su calidad de internet o por el dispositivo que utiliza podrían ocasionar la reprobación de su examen.
+
+No se permiten utilizar otros dispositivos. 
+El examen no requiere del uso de otros dispositivos por lo que utilizar otros además del dispositivo del examen resultará en su reprobación automática.
+
+Preste atención a las instrucciones durante el examen.
+Existen instrucciones para el llenado de cada pregunta, por favor respete el número de respuestas permitidas por pregunta.
+
+
+No podrá salir del examen hasta terminarlo.
+Una vez que usted acepta comenzar con el examen usted no podrá interrumpirlo de ninguna manera, esto incluye aunque no se limita a:
+Cerrar la pestaña
+Cerrar el navegador
+Hacer click en la flecha "atrás" del navegador
+Recargar la página
+Desconectar la conexión de internet, etc.
+Realizar cualquiera de estas acciones o resultará en su reprobación automática.
+
+7777777777
+
+
+
+fuentes: 
+lato
+kristi
+roboto?
+
+
+
+
+
+CODIGOS AUXILIARES
+ padding-top: 200px; padding-bottom: 200px;

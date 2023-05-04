@@ -1,0 +1,22 @@
+    body {
+        background-size: cover;
+    }
+    
+    .esquinas {
+        border-radius: 0px;
+    }
+
+    .fondo-general {
+        background-color: rgba(235, 221, 174, 0.068);
+        background-image: url("img/1977165-01.png");
+        background-attachment: fixed;
+        mix-blend-mode:normal;
+    }
+
+    .muevete-arriba {
+        transform: translate(0 , -45px);
+    }
+
+    .bg-blur {
+        background-color: #1d2046;
+    }
