@@ -25,3 +25,16 @@
     .bg-blur {
         background-color: #1d2046;
     }
+
+    .titulo-raro {
+        line-height: 0.6;
+        font-size: calc(28px + 0.390625vw);
+    }
+
+
+    @media (max-width: 767px)  {
+        .titulo-raro {
+         line-height: 0.6;
+         font-size: calc(22px + 0.390625vw);
+        }
+    }
