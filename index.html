@@ -14,6 +14,11 @@
       crossorigin="anonymous"
     />
 
+    <link href="img/favicon.ico" rel="icon">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
     <script
     src="main.js"
   ></script>
@@ -34,7 +39,7 @@
 </head>
 <body class="fondo-general">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html">
           <img style="max-width: 250px;" src="img/bir2.png" alt="logoindigo">
         </a>
@@ -62,39 +67,77 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
 
 <!-- TERMINA NAVBAR Y COMIENZA CONTENEDOR GENERAL -->
 
 
 
 
-    <div class="container d-flex align-items-center muevete-arriba" 
-         style="min-width: 100svw; min-height: 100svh;"> <!-- ESTE CONTENEDOR ES TODO EL VIEWPORT FUERA DEL NAVBAR -->
-        <div class="mx-auto bg-blur text-center d-flex flex-row align-items-center justify-content-center esquinas"
-             style="color:white; height: 75svh; min-width: 80svw; line-height: 0.9;">
-          <div class="d-flex flex-column col-6 bg-warning justify-content-center" style="height:70vh;">
-              <h4>
-                  CAPACITACIÓN<br>
-                  LABORAL
-              </h4>
-              <button onclick="myFunc()">Click Me</button>
-              <p>
-                  estudia
-              </p>
-          </div>
-          <div class="d-flex flex-column col-2 bg-danger justify-content-center" style="height:70vh;">
-              <h4>
-                NO CAPACITACIÓN<br>
-                NO LABORAL
-            </h4>
-            <button onclick="myFunc()">Click Me</button>
-            <p>
-                estudia
-            </p>
-          </div>
-        </div>
+<div class="container align-items-center"
+     style="min-width: 80svw; min-height: 40svh; 
+     background-color: #201c42; color: white; border-radius: 5px;">
+  <div class="row flex-column-reverse flex-md-row justify-content-between mx-5 pt-4">
+    <div> <!-- AQUI HABIA UN FLEX-COLUMN QUE NO ESTABA FUNCIONANDO -->
+      <h2 class="pt-3" style="line-height: 0.6; font-weight: 200; color: #F7C045">Bienvenido al</h2>
+      <h3 class="pt-0" style="line-height: 0.6; color: #ffffff">portal de colaboradores</h3>
     </div>
+      <img src="/img/bir1.png" class="h-100 my-auto" style="width: 200px;" alt="logobirreria">
+  </div>
+  <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+  <div class="row justify-content-around pt-1 pt-md-3 pb-1 pb-md-3 pr-5 pl-5">
+
+    <div class="card col-md-3 px-2 mr-1 mr-md-0 ml-1 ml-md-0 mt-1 mt-md-0 mb-1 mb-md-0" 
+         style="min-width: 12.5em; background-color: #282d57;">
+      <div class="text-center text-md-left">
+        <i class="fa fa-user fa-3x pt-3"></i>
+      </div>
+      <h3 class="text-center text-md-left" 
+      style="padding-top: 0.1em; font-size: calc(16px + 0.390625vw);">Perfil</h3>
+      <p class="text-center text-md-left mx-5 mx-md-0" 
+      style="hyphens: auto; line-height: 1.1; font-size: calc(12px + 0.390625vw);"
+      >Revisa y actualiza los datos que man&shy;tienes registrados.</p>
+    </div>
+
+    <div class="card col-md-3 px-2 mr-1 mr-md-0 ml-1 ml-md-0 mt-1 mt-md-0 mb-1 mb-md-0" 
+         style="min-width: 12.5em; background-color: #282d57;">
+      <div class="text-center text-md-left">
+        <i class="fa fa-print fa-3x pt-3"></i>
+      </div>
+      <h3 class="text-center text-md-left" 
+      style="padding-top: 0.1em; font-size: calc(16px + 0.390625vw);">Roles</h3>
+      <p class="text-center text-md-left mx-5 mx-md-0" 
+      style="hyphens: auto; line-height: 1.1; font-size: calc(12px + 0.390625vw);"
+      >Revisa el historial detallado de pagos que has recibido.</p>
+    </div>
+
+    <div class="card col-md-3 px-2 mr-1 mr-md-0 ml-1 ml-md-0 mt-1 mt-md-0 mb-1 mb-md-0" 
+         style="min-width: 12.5em; background-color: #282d57;">
+      <div class="text-center text-md-left">
+        <i class="fa fa-book fa-3x pt-3"></i>
+      </div>
+      <h3 class="text-center text-md-left" 
+      style="padding-top: 0.1em; font-size: calc(16px + 0.390625vw);">Capacitaciones</h3>
+      <p class="text-center text-md-left mx-5 mx-md-0" 
+      style="hyphens: auto; line-height: 1.1; font-size: calc(12px + 0.390625vw);"
+      >Revisa tus calificaciones y capacitaciones pendientes.</p>
+    </div>
+
+  </div>
+    <!-- HASTA AQUI VA EL ROW CON LOS 3 CARDS -->
+
+  <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+
+  <div class="row justify-content-center mx-2 pt-4 pb-5">
+    <div class="d-flex">
+      <a class="px-3" href="/index2.html" style="font-size: calc(6px + 0.390625vw); text-decoration: none;">Politica corporativa</a>
+      <a class="px-3" href="/index2.html" style="font-size: calc(6px + 0.390625vw); text-decoration: none;">|</a>
+      <a class="px-3" href="/index2.html" style="font-size: calc(6px + 0.390625vw); text-decoration: none;">Contactar a RRHH</a>
+    </div>
+  </div>
+</div>
     
 </body>
 </html>

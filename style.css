@@ -1,5 +1,10 @@
     body {
+        display: flex;
+        height: 100svh;
+        align-items: center;
         background-size: cover;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
     .esquinas {
