@@ -1,4 +1,13 @@
-    body {
+:root {
+    --font-family-sans-serif: "Poppins", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Lato', sans-serif;
+    --font-family: 'Kristi', cursive;
+}
+
+
+body {
         display: flex;
         height: 100svh;
         align-items: center;
@@ -31,10 +40,32 @@
         font-size: calc(28px + 0.390625vw);
     }
 
+    .alto {
+        min-height: 40vh;
+    }
+
+
+    
+
+
+
+
+    
 
     @media (max-width: 767px)  {
         .titulo-raro {
          line-height: 0.6;
          font-size: calc(22px + 0.390625vw);
         }
+
+        .alto {
+            min-height: 90vh;
+        }
     }
+
+    @media only screen and (min-width: 768px) and (max-width: 1000px)  {
+        .alto {
+            min-height: 400px;
+        }
+    }
+
