@@ -21,8 +21,7 @@ body {
     }
 
     .fondo-general {
-        background-color: rgba(235, 221, 174, 0.068);
-        background-image: url("img/1977165-01.png");
+        background-image: url("img/tex-02.png");
         background-attachment: fixed;
         mix-blend-mode:normal;
     }
@@ -61,6 +60,11 @@ body {
         .alto {
             min-height: 90vh;
         }
+
+        body {        
+            height: auto;
+        }
+
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1000px)  {
