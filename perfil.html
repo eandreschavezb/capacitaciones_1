@@ -101,150 +101,393 @@
       </div>
     </div>
   </div> -->
-  
 
 
-  
 
-  <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
-    <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
-        <li class="nav-item"> <a data-toggle="pill" href="#credito" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Personales </a> </li>
-        <li class="nav-item"> <a data-toggle="pill" href="#fiado" class="nav-link "> <i class="fa fa-money-bill mr-2"></i> Educación </a> </li>
-        <li class="nav-item"> <a data-toggle="pill" href="#saldoSplendor" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Núcleo Familiar </a> </li>
+  <div class="container p-5 mt-2 mt-md-4 mb-3 rounded" style="transform: translateY(0px); max-width:95svw; min-height: 80svh; background-color: #1d2046; color: white;">
+
+
+
+
+
+
+
+
+    <ul class="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
+      <li class="col-12 col-md-4 nav-item my-1 my-md-0">
+        <a class="nav-link active" id="pills-personales-tab" data-toggle="pill" href="#pills-personales" role="tab" aria-controls="pills-personales" aria-selected="true">Datos personales</a>
+      </li>
+      <li class="col-12 col-md-4 nav-item my-1 my-md-0">
+        <a class="nav-link" id="pills-academicas-tab" data-toggle="pill" href="#pills-academicas" role="tab" aria-controls="pills-academicas" aria-selected="false">Información académica</a>
+      </li>
+      <li class="col-12 col-md-4 nav-item my-1 my-md-0">
+        <a class="nav-link" id="pills-familiar-tab" data-toggle="pill" href="#pills-familiar" role="tab" aria-controls="pills-familiar" aria-selected="false">Información familiar</a>
+      </li>
     </ul>
-</div>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-personales" role="tabpanel" aria-labelledby="pills-personales-tab">
+                      <div class="row">
+                        <div class="col pb-3 pt-3">
+                          <h1 style="line-height: 0.8;">DATOS PERSONALES</h1>
+                          <h6>Ingrese toda la información requerida y pulse "siguiente" para continuar.</h6>
+                        </div>
+                      </div>
 
-  <div class="container p-5" id="credito" style="transform: translateY(0px); min-width:90svw; min-height: 70svh; background-color: #1d2046; color: white;">
-    <div class="row">
-      <div class="col">
-        <!-- Name input -->
-        <div class="form-outline">
-          <input type="text" id="form8Example1" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Nombre</label>
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+                      
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <input type="text" id="form8Example1" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Nombre</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Cédula</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="date" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Fecha de nacimiento</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+                  
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example1" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Tel. Celular</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Tel. Convencional</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="email" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">e-mail personal</label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+                  
+                  
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="form-outline">
+                            <select class="form-control">
+                              <option value="1">Soltero/a</option>
+                              <option value="2">Casado/a</option>
+                              <option value="3">Unión Libre Notarizada</option>
+                              <option value="4">Divorciado/a</option>
+                              <option value="5">Viudo/a</option>
+                            </select>
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Estado Civil</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="form-outline">
+                            <input type="text" id="form8Example4" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Lugar de nacimiento</label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+                  
+                      <div class="row">
+                        <div class="col-12 col-md-3">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example1" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Ciudad domicilio</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Sector domicilio</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <!-- Email input -->
+                          <div class="form-outline">
+                            <input type="email" id="form8Example2" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Numeración domicilio</label>
+                          </div>
+                        </div>
+                  
+                        <div class="col-12 col-md-3">
+                          <div class="form-outline">
+                            <select class="form-control">
+                              <option value="1">Edificio</option>
+                              <option value="2">Casa</option>
+                              <option value="3">Casa en conjunto</option>
+                            </select>
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Tipo de vivienda</label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+  
+                      
+                      <div class="row">
+                        <div class="col" style="width: 100%">
+                          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Ubique su dirección en el mapa</label>
+                          <iframe width="100%" 
+                            height="200" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=av.%20shyris%20y%20portugal+(Ciudad%20de%20Quito)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            <a href="https://www.maps.ie/distance-area-calculator.html">
+                              measure distance on map
+                            </a>
+                          </iframe>
+                      </div>
+                      </div>
+
+                      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+                      <div class="row">
+                        <div class="col-12 col-md-9">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <input type="number" id="form8Example1" class="form-control" />
+                            <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Dirección de domicilio</label>
+                          </div>
+                        </div>
+                  
+                        <div class="col-12 col-md-3">
+
+                            <a 
+                            class="nav-link" 
+                            id="pills-familiar-tab" 
+                            data-toggle="pill" 
+                            href="#pills-academicas" 
+                            role="tab" 
+                            aria-controls="pills-academicas" 
+                            aria-selected="false">
+
+                              <button 
+                                type="submit"
+                                class="btn btn-primary w-100 mb-5 h-100">
+                                Siguiente
+                              </button>
+
+                            </a>
+
+                        </div>
+                      </div>
+      </div>
+
+
+
+
+      
+      <div class="tab-pane fade" id="pills-academicas" role="tabpanel" aria-labelledby="pills-academicas-tab">
+
+        <div class="row">
+          <div class="col pb-3 pt-3">
+            <h1 style="line-height: 0.8;">INFORMACIÓN ACADÉMICA</h1>
+            <h6>Ingrese su información académica y pulse "siguiente"</h6>
+          </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+        <div class="row">
+          <div class="col-12 col-md-4 pb-3 pb-md-0">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form11Example2" unchecked />
+              <label class="form-check-label" for="form11Example2" style="line-height: 0.9;"> ¿Está cursando estudios actualmente? </label>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="form-outline">
+              <select class="form-control">
+                <option value="1">Primaria (escuela)</option>
+                <option value="2">Bachillerato (secundaria)</option>
+                <option value="3">Tercer Nivel</option>
+                <option value="4">Cuarto Nivel</option>
+              </select>
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">¿Cuál es el máximo nivel académico que ha completado?</label>
+            </div>
+          </div>  
+        </div>
+
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+
+        <div class="row">
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form8Example1" class="form-control" />
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Título del último nivel completado</label>
+            </div>
+          </div>   
+        </div>
+
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+
+        <div class="row">
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form8Example1" class="form-control" />
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Establecimiento académico</label>
+            </div>
+          </div> 
+        </div>
+
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+
+        <div class="row pt-3 pt-md-0">
+          <div class="col-12 col-md-9">
+
+          </div>
+          <div class="col-12 col-md-3 ">
+
+            <a 
+            class="nav-link" 
+            id="pills-familiar-tab" 
+            data-toggle="pill" 
+            href="#pills-familiar" 
+            role="tab" 
+            aria-controls="pills-familiar" 
+            aria-selected="false">
+
+            <button 
+              type="submit" 
+              class="btn btn-primary w-100">
+              Siguiente
+            </button>
+
+            </a>
+
+
+          </div>
         </div>
       </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Cédula</label>
+
+
+
+
+
+      <div class="tab-pane fade" id="pills-familiar" role="tabpanel" aria-labelledby="pills-familiar-tab">
+        <div class="row">
+          <div class="col pb-3 pt-3">
+            <h1 style="line-height: 0.8;">INFORMACIÓN SOBRE SU NÚCLEO FAMILIAR</h1>
+            <h6>Ingrese toda la información requerida y pulse "finalizar" para enviar.</h6>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="date" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Fecha de nacimiento</label>
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+        <div class="row pb-3">
+          <div class="col">
+            <h5>¿Tiene hijos menores de edad? regístrelos a continuación:</h5>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Cédula</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Nombres</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Fecha de nacimiento</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <button 
+            type="submit" 
+            class="btn btn-primary w-100">
+            Agregar
+          </button>
+          </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+        <div class="row pb-3">
+          <div class="col">
+            <h5>Registre la persona a contactar en caso de emergencia.</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label" style="line-height: 0.9;" for="form8Example1">Contacto de emergencia</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label" style="line-height: 0.9;" for="form8Example1">Parentesco</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="form-outline">
+              <input type="text" class="form-control">
+              <label class="form-label" style="line-height: 0.9;" for="form8Example1">Teléfono</label>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
+        <div class="row">
+          <div class="col-12 col-md-9">
+
+          </div>
+          <div class="col-12 col-md-3">
+            <button 
+            type="submit" 
+            class="btn btn-primary w-100">
+            Enviar y finalizar
+          </button>
+          </div>
+        </div>
+
+
       </div>
+
     </div>
-    
-    <hr style="border-top: 1px solid rgb(116, 116, 116);">
-
-    <div class="row">
-      <div class="col">
-        <!-- Name input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example1" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Tel. Celular</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Tel. Convencional</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="email" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">e-mail personal</label>
-        </div>
-      </div>
-    </div>
-
-    <hr style="border-top: 1px solid rgb(116, 116, 116);">
-
-
-    <div class="row">
-      <div class="col">
-        <div class="form-outline">
-          <select class="form-control">
-            <option value="1">Soltero/a</option>
-            <option value="2">Casado/a</option>
-            <option value="3">Unión Libre Notarizada</option>
-            <option value="4">Divorciado/a</option>
-            <option value="5">Viudo/a</option>
-          </select>
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Estado Civil</label>
-        </div>
-      </div>
-      <div class="col">
-        <div class="form-outline">
-          <input type="text" id="form8Example4" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Lugar de nacimiento</label>
-        </div>
-      </div>
-    </div>
-
-    <hr style="border-top: 1px solid rgb(116, 116, 116);">
-
-    <div class="row">
-      <div class="col">
-        <!-- Name input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example1" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Ciudad domicilio</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Sector domicilio</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="email" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Numeración domicilio</label>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="form-outline">
-          <select class="form-control">
-            <option value="1">Edificio</option>
-            <option value="2">Casa</option>
-            <option value="3">Casa en conjunto</option>
-          </select>
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example4">Tipo de vivienda</label>
-        </div>
-      </div>
-    </div>
-
-    <hr style="border-top: 1px solid rgb(116, 116, 116);">
-
-    <div class="row">
-      <div class="col-9">
-        <!-- Name input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example1" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Dirección de domicilio</label>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <button type="submit" class="btn btn-primary">Siguiente</button>
-      </div>
-    </div>
-
-
-
-
     
 
   </div>
@@ -264,53 +507,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-  <div class="container p-5" id="fiado" style="transform: translateY(0px); min-width:90svw; min-height: 70svh; background-color: #1d2046; color: white;">
-    <div class="row">
-      <div class="col">
-        <!-- Name input -->
-        <div class="form-outline">
-          <input type="text" id="form8Example1" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example1">Nombre</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="number" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Cédula</label>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Email input -->
-        <div class="form-outline">
-          <input type="date" id="form8Example2" class="form-control" />
-          <label class="form-label pt-1" style="line-height: 0.9;" for="form8Example2">Fecha de nacimiento</label>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    
-
-  </div>
 
 
 
