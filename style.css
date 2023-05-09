@@ -5,6 +5,9 @@
     --font-family: 'Lato', sans-serif;
     --font-family: 'Kristi', cursive;
     --font-family: 'Roboto Condensed', sans-serif;
+    --g1: #416BBB;
+    --g2: #23427E;
+    --g3: #041840;
 }
 
     body {
@@ -71,12 +74,20 @@
         transition: transform 250ms;
     }
 
-    
+    .navbar {
+        background-image: linear-gradient(to left, #e1a556, #e99b343f, #E9BC45);
+    }
 
 
 
+    .logo-responsivo {
+        height: 6vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
-    
 
     @media (max-width: 767px)  {
         .titulo-raro {
@@ -94,6 +105,13 @@
 
         .iconos-responsivos {
             max-height: 60px;
+        }
+        .logo-responsivo {
+            height: 5vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     
 
