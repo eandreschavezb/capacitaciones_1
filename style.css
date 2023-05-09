@@ -44,8 +44,8 @@
     .container .nav .nav-link {
         background-color: rgba(187, 187, 187, 0.342);
         color: rgb(175, 175, 175);
-        margin-left: 0.2em;
-        margin-right: 0.2em;
+        margin-left: 0px;
+        margin-right: 0px;
           }
 
     .container .nav .nav-item .active {
@@ -75,8 +75,9 @@
     }
 
     .navbar {
-        background-image: linear-gradient(to left, #e1a556, #e99b343f, #E9BC45);
-    }
+        background-image: radial-gradient(farthest-corner at 40px 40px, #e1a556, #E9BC45);
+/*         background-image: linear-gradient(to left, #e1a556, #dbbd96af, #E9BC45);
+ */    }
 
 
 
@@ -113,6 +114,12 @@
             margin-top: auto;
             margin-bottom: auto;
         }
+        .container .nav .nav-link {
+            background-color: rgba(187, 187, 187, 0.342);
+            color: rgb(175, 175, 175);
+            margin-left: 0em;
+            margin-right: 0em;
+              }
     
 
     }
