@@ -59,6 +59,21 @@
         color: rgb(243, 243, 243);
     }
 
+    .container .card-img-top {
+        background-color: #e1a556;
+        object-fit: cover;
+        height: 40vh;
+        margin-top: 1em;
+        border-radius: 10px;
+    }
+
+    .container .card-body {
+        background-color: #eeeeee;
+        color: #e1a556;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }    
+
     .iconos-responsivos {
         max-height: 120px;
     }
@@ -120,13 +135,27 @@
             margin-left: 0em;
             margin-right: 0em;
               }
+        .container .card-img-top {
+          background-color: #e1a556;
+          object-fit: cover;
+          height: 25vh;
+          margin-top: 1em;
+          border-radius: 10px;
+      }
     
 
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1000px)  {
+    @media only screen and (min-width: 768px) and (max-width: 999px)  {
         .alto {
             min-height: 400px;
+        }
+        .container .card-img-top {
+            background-color: #e1a556;
+            object-fit: cover;
+            height: 15vh;
+            margin-top: 1em;
+            border-radius: 10px;
         }
     }
 
