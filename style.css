@@ -100,7 +100,7 @@
 
 
     .container .card-img-top {
-        background-color: #e156a2;
+        background-color: #5692e1;
         object-fit: cover;
         height: 15vh;
         margin-top: 1em;
@@ -129,6 +129,71 @@
         transition: transform 250ms;
     }
 
+
+
+    /* COMIENZAN ANIMACIONES DE CARDS DE CAPACITACIONES */
+
+
+    .anima-capacita {
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity ease-out 250ms;
+    }
+
+    .anima-capacita:hover {
+        opacity: 0.2;
+    }
+
+
+
+
+
+    .card {
+        position: relative;
+        margin: 1em;
+        background: $clr-gray;
+    }
+        .card::before, 
+        .card::after {
+          content: '';
+          position: absolute;
+          top: 8em;
+          bottom: 8em;
+          left: 2em;
+          right: 2em;
+          opacity: 1;
+          transition: transform ease-out 250ms;
+        }
+        
+        .card::before {
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          transform: scale(0,1);
+        }
+        
+        .card::after {
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+          transform: scale(1,0);
+        }
+        
+        .card:hover::before {
+          transform: scale(1.05, 1);
+        }
+        
+        .card:hover::after {
+          transform: scale(1, 1.05);
+        }
+      }
+
+
+
+
+    /* COMIENZAN ANIMACIONES DE CARDS DE CAPACITACIONES */
+
+
+
+
     .navbar {
         background-image: radial-gradient(farthest-corner at 40px 40px, #e1a556, #E9BC45);
 /*         background-image: linear-gradient(to left, #e1a556, #dbbd96af, #E9BC45);
@@ -155,10 +220,6 @@
     .progress .progress-bar {
         background-color:#e1a556;
         color:#041840;
-    }
-
-    .card {
-        cursor: pointer;
     }
 
 /*     .container .btn {
