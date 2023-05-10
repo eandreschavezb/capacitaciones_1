@@ -53,23 +53,63 @@
         color: rgb(243, 243, 243);
     }
 
-    .container button {
+/*     .container button {
         border: none;
         background-color: #e1a556;
         color: rgb(243, 243, 243);
     }
+ */
+
+    .container .btn-primary {
+        border: none;
+        background-color: #e1a556;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
+
+
+    .container .btn-primary:hover,
+    .container .btn-primary:focus-visible {
+        border: none;
+        background-color: #946e3c;
+        color: rgb(243, 243, 243);
+    }
+
+
+    .container .btn-secondary {
+        border: none;
+        background-color: #94979c;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
+
+
+    .container .btn-secondary:hover,
+    .container .btn-secondary:focus-visible {
+        border: none;
+        background-color:#404349;
+        color: rgb(243, 243, 243);
+    }
+    
+
+
+
+/* EN ESTA LINEA FUNDARE MI ONHOVER
+ */
+
+
 
     .container .card-img-top {
-        background-color: #e1a556;
+        background-color: #e156a2;
         object-fit: cover;
-        height: 40vh;
+        height: 15vh;
         margin-top: 1em;
         border-radius: 10px;
     }
 
     .container .card-body {
         background-color: #eeeeee;
-        color: #e1a556;
+        color:#041840;
         margin-top: 1em;
         margin-bottom: 1em;
     }    
@@ -94,7 +134,9 @@
 /*         background-image: linear-gradient(to left, #e1a556, #dbbd96af, #E9BC45);
  */    }
 
-
+    .container .card-body h4 {
+        font-size: calc(17px + 0.390625vw);  
+    }
 
     .logo-responsivo {
         height: 6vh;
@@ -103,6 +145,25 @@
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    .card-text {
+        line-height: 0.8;
+        font-size: calc(10px + 0.390625vw);
+    }
+
+
+    .progress .progress-bar {
+        background-color:#e1a556;
+        color:#041840;
+    }
+
+    .card {
+        cursor: pointer;
+    }
+
+/*     .container .btn {
+        font-size: calc(7px + 0.390625vw);
+    } */
 
 
     @media (max-width: 767px)  {
@@ -142,6 +203,13 @@
           margin-top: 1em;
           border-radius: 10px;
       }
+      .container .card-img-top {
+        background-color: #e156a2;
+        object-fit: cover;
+        height: 30vh;
+        margin-top: 1em;
+        border-radius: 10px;
+    }
     
 
     }
@@ -154,6 +222,13 @@
             background-color: #e1a556;
             object-fit: cover;
             height: 15vh;
+            margin-top: 1em;
+            border-radius: 10px;
+        }
+        .container .card-img-top {
+            background-color: #e156a2;
+            object-fit: cover;
+            height: 10vh;
             margin-top: 1em;
             border-radius: 10px;
         }
