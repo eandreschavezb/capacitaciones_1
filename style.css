@@ -136,56 +136,99 @@
 
     .anima-capacita {
         cursor: pointer;
-        opacity: 1;
-        transition: opacity ease-out 250ms;
+        background-color: transparent;
+        opacity: 0;
+        transition: background-color ease-out 1500ms,
+                    opacity ease-in-out 1200ms;
     }
 
     .anima-capacita:hover {
-        opacity: 0.2;
+        background-color: #041840;
+        opacity: 0.8;
     }
 
 
+`0
 
 
-
-    .card {
+    .card__chucha {
+        cursor: pointer;
         position: relative;
-        margin: 1em;
         background: $clr-gray;
     }
-        .card::before, 
-        .card::after {
+        .card__chucha::before, 
+        .card__chucha::after {
           content: '';
           position: absolute;
-          top: 8em;
-          bottom: 8em;
-          left: 2em;
-          right: 2em;
+          top: 4.5em;
+          bottom: 4.5em;
+          right: 2.5em;
+          left: 2.5em;
           opacity: 1;
-          transition: transform ease-out 250ms;
+          border-radius: 10px;
+          transition: transform ease-out 2500ms;
         }
         
-        .card::before {
-          border-top: 1px solid white;
+        .card__chucha::before {
+          /* border-top: 1px solid white;
           border-bottom: 1px solid white;
-          transform: scale(0,1);
+          transform: scale(0,1); */
+          background:#041840;
+          opacity: 0;
+          transform: scale(0);
+          transition: transform ease-out 1000ms,
+                      opacity ease-out 2000ms;
         }
         
-        .card::after {
-          border-left: 1px solid white;
-          border-right: 1px solid white;
-          transform: scale(1,0);
+        .card__chucha::after {
+          /* border-left: 1px solid white;
+          border-right: 1px solid white; */
+          opacity: 1;
+          transform: scale(1,1);
         }
         
-        .card:hover::before {
-          transform: scale(1.05, 1);
+        .card__chucha:hover::before {
+          opacity: 1;
+          transform: scale(1, 1);
         }
         
-        .card:hover::after {
-          transform: scale(1, 1.05);
+        .card__chucha:hover::after {
+            opacity: 1;
+          transform: scale(1, 1);
         }
-      }
+      
 
+        .descole {
+            isolation: isolate;
+        }
+
+
+
+
+        .card__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            opacity: 0;
+            transition: opacity ease-out 250ms;
+       }
+        .card:hover .card__text {
+            opacity: 1;
+       }
+        .card__title {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 0;
+       }
+        .source {
+            opacity: 0.8;
+            position: absolute;
+            width: 100%;
+            bottom: 1em;
+       }
+        
 
 
 
