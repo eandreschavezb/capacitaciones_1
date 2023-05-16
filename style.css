@@ -120,7 +120,7 @@
 
     .menu-animacion {
         cursor: pointer;
-        transition: transform 1000ms;
+        transition: transform 800ms;
     }
 
     .menu-animacion:hover,
@@ -136,28 +136,28 @@
 
     .anima-capacita {
         cursor: pointer;
-        background-color: transparent;
-        opacity: 0;
+        background-color: rgb(192, 35, 29);
+        opacity: 1;
         transition: background-color ease-out 1500ms,
                     opacity ease-in-out 1200ms;
     }
 
     .anima-capacita:hover {
         background-color: #041840;
-        opacity: 0.8;
+        opacity: 1;
     }
 
 
 `0
 
 
-    .card__chucha {
+    .card__animada {
         cursor: pointer;
         position: relative;
         background: $clr-gray;
     }
-        .card__chucha::before, 
-        .card__chucha::after {
+        .card__animada::before, 
+        .card__animada::after {
           content: '';
           position: absolute;
           top: 4.5em;
@@ -166,33 +166,35 @@
           left: 2.5em;
           opacity: 1;
           border-radius: 10px;
-          transition: transform ease-out 2500ms;
+          
         }
         
-        .card__chucha::before {
+        .card__animada::before {
           /* border-top: 1px solid white;
           border-bottom: 1px solid white;
           transform: scale(0,1); */
           background:#041840;
           opacity: 0;
           transform: scale(0);
-          transition: transform ease-out 1000ms,
-                      opacity ease-out 2000ms;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.644);
+          transition: transform ease-in-out 1000ms,
+                      opacity ease-in-out 550ms;
         }
         
-        .card__chucha::after {
+        .card__animada::after {
           /* border-left: 1px solid white;
           border-right: 1px solid white; */
           opacity: 1;
           transform: scale(1,1);
         }
         
-        .card__chucha:hover::before {
-          opacity: 1;
+        .card__animada:hover::before {
+          opacity: 0.9;
           transform: scale(1, 1);
+          transition: transform ease-in-out 300ms;
         }
         
-        .card__chucha:hover::after {
+        .card__animada:hover::after {
             opacity: 1;
           transform: scale(1, 1);
         }
