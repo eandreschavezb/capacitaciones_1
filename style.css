@@ -95,11 +95,68 @@
         color: rgb(243, 243, 243);
     }
     
+    
 
 
 
 /* EN ESTA LINEA FUNDARE MI ONHOVER
  */
+
+
+
+ .flex-container .nav .nav-link {
+    background-color: rgba(187, 187, 187, 0.342);
+    color: rgb(175, 175, 175);
+    margin-left: 0px;
+    margin-right: 0px;
+      }
+
+.flex-container .nav .nav-item .active {
+    background-color: #e1a556;
+    color: rgb(243, 243, 243);
+}
+
+/*     .container button {
+    border: none;
+    background-color: #e1a556;
+    color: rgb(243, 243, 243);
+}
+*/
+
+.flex-container .btn-primary {
+    border: none;
+    background-color: #e1a556;
+    color: rgb(29, 29, 29);
+    border-radius: 5px;
+}
+
+
+.flex-container .btn-primary:hover,
+.container .btn-primary:focus-visible {
+    border: none;
+    background-color: #946e3c;
+    color: rgb(243, 243, 243);
+}
+
+
+.flex-container .btn-secondary {
+    border: none;
+    background-color: #94979c;
+    color: rgb(29, 29, 29);
+    border-radius: 5px;
+}
+
+
+.flex-container .btn-secondary:hover,
+.flex-container .btn-secondary:focus-visible {
+    border: none;
+    background-color:#404349;
+    color: rgb(243, 243, 243);
+}
+
+
+
+/* TAMPOCO  */
 
 
 
@@ -293,7 +350,7 @@
     }
 
     .puerco-video {
-        min-height: 60svh;
+        min-height: 100svh;
     }
 
     .centrado {
@@ -304,36 +361,67 @@
     .item {
         width: 250px;
         height: 50%;
-        background-color: #fb7185;
         padding: 1em;
         font-weight: 700;
-        color: #1c4235;
         text-align: center;
-        border: 10px solid #fbf971;
         border-radius: 5px;
+
+/*         background-color: #403b6e;
+        color: #1c4235;
+        border: 10px solid #201c42; */
       }
 
       .item-1 {
-        margin-left: 1em;
+        margin-left: 1em;/* 
+        flex: 0; */
       }
 
       .item-2 {
+        margin-right: 1em;
         flex: 1;
       }
 
-      .item-3 {
-        margin-right: 1em;
+      .item-3 {/* 
+        flex: 0; */
       }
 
       .flex-container {
         display: flex;
         flex-direction: row;
         width: 80%;
-        height: 80svh;
+        min-height: 80svh;
         margin: 0 auto;
         justify-content:space-evenly;
         align-items: center;
         gap: 0.5em;
+      }
+
+      .rapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 20em;
+        justify-content: center;
+      }
+
+      .inner-rapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 20em;
+        justify-content: center;
+      }
+
+      .rappervid {
+        display: flex;
+        flex-direction: column;
+        min-height: 20em;
+        justify-content: center;
+      }
+
+      .inner-rappervid {
+        display: flex;
+        flex-direction: column;
+        min-height: 20em;
+        justify-content: center;
       }
 
       
@@ -403,7 +491,7 @@
     }
 
     .puerco-video {
-        min-height: 20svh;
+        min-height: 50svh;
     }
     
 
@@ -411,35 +499,72 @@
     .flex-container {
         flex-direction: column;
         justify-content:space-evenly;
-        height: 85svh;
+        height: auto;
+        gap: 0em;
       }
 
       .item {
         width: 90%;
         height: 85%;
-        background-color: #fb7185;
         padding: 1em;
         font-weight: 700;
-        color: #1c4235;
         text-align: center;
-        border: 10px solid #fbf971;
         border-radius: 5px;
         margin-top: auto;
         margin-bottom: auto;
+        
+/*         background-color: #403b6e;
+        border: 10px solid #201c42;
+        color: #1c4235; */
       }
 
       .item-1 {
-        flex: 0;
-        margin-left: 0;
+        margin-left: 0em;
+        /* flex: 0; */
       }
 
       .item-2 {
+        margin-right: 0em;
         flex: 1;
       }
 
       .item-3 {
-        margin-right: 0;
-        flex: 0;
+        /* flex: 0; */
+      }
+      .rapper {
+        display: flex;
+        flex-direction: column;
+        min-height:fit-content;
+        justify-content: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .inner-rapper {
+        display: flex;
+        flex-direction: column;
+        min-height:fit-content;
+        justify-content: center;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+
+      .rappervid {
+        display: flex;
+        flex-direction: column;
+        max-height:fit-content;
+        justify-content: center;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+
+      .inner-rappervid {
+        display: flex;
+        flex-direction: column;
+        max-height:fit-content;
+        justify-content: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
       }
 
     }
