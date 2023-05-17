@@ -107,8 +107,7 @@
  .flex-container .nav .nav-link {
     background-color: rgba(187, 187, 187, 0.342);
     color: rgb(175, 175, 175);
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0.15em;
       }
 
 .flex-container .nav .nav-item .active {
@@ -350,7 +349,8 @@
     }
 
     .puerco-video {
-        min-height: 100svh;
+        min-height: 70svh;
+        max-height: 80svh;
     }
 
     .centrado {
@@ -492,6 +492,7 @@
 
     .puerco-video {
         min-height: 50svh;
+        max-height: 50svh;
     }
     
 
@@ -566,6 +567,11 @@
         margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
+      .flex-container .nav .nav-link {
+        background-color: rgba(187, 187, 187, 0.342);
+        color: rgb(175, 175, 175);
+        margin: 0em;
+          }
 
     }
 
