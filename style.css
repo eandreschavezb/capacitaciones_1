@@ -301,15 +301,42 @@
         justify-content: center;
     }
 
+    .item {
+        width: 250px;
+        height: 50%;
+        background-color: #fb7185;
+        padding: 1em;
+        font-weight: 700;
+        color: #1c4235;
+        text-align: center;
+        border: 10px solid #fbf971;
+        border-radius: 5px;
+      }
 
+      .item-1 {
+        margin-left: 1em;
+      }
 
-    .cont-2 {
-        border: #e156a2;
-        flex-grow: 1;
-    }
+      .item-2 {
+        flex: 1;
+      }
 
+      .item-3 {
+        margin-right: 1em;
+      }
 
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 80svh;
+        margin: 0 auto;
+        justify-content:space-evenly;
+        align-items: center;
+        gap: 0.5em;
+      }
 
+      
 
     @media (max-width: 767px)  {
         .titulo-raro {
@@ -380,6 +407,41 @@
     }
     
 
+    /* ESTO YA ESTA PERFECTO NO TOQUES */
+    .flex-container {
+        flex-direction: column;
+        justify-content:space-evenly;
+        height: 85svh;
+      }
+
+      .item {
+        width: 90%;
+        height: 85%;
+        background-color: #fb7185;
+        padding: 1em;
+        font-weight: 700;
+        color: #1c4235;
+        text-align: center;
+        border: 10px solid #fbf971;
+        border-radius: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .item-1 {
+        flex: 0;
+        margin-left: 0;
+      }
+
+      .item-2 {
+        flex: 1;
+      }
+
+      .item-3 {
+        margin-right: 0;
+        flex: 0;
+      }
+
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1280px)  {
@@ -422,5 +484,23 @@
         .puerco-video {
             min-height: 40svh;
         }
+
+/*         .flex-container {
+            flex-direction: row;
+            justify-content:space-evenly;
+            height: 85svh;
+          }
+
+        .item {
+            width: 70svw;
+            height: 50%;
+            background-color: #fb7185;
+            padding: 1em;
+            font-weight: 700;
+            color: #1c4235;
+            text-align: center;
+            border: 10px solid #fbf971;
+            border-radius: 5px;
+          } */
     }
 
