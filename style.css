@@ -14,10 +14,6 @@
         max-height: 120svh;
     }
 
-/*     a {
-        pointer-events: none;
-    } */
-
     .esquinas {
         border-radius: 0px;
     }
@@ -57,13 +53,6 @@
         color: rgb(243, 243, 243);
     }
 
-/*     .container button {
-        border: none;
-        background-color: #e1a556;
-        color: rgb(243, 243, 243);
-    }
- */
-
     .container .btn-primary {
         border: none;
         background-color: #e1a556;
@@ -95,68 +84,48 @@
         color: rgb(243, 243, 243);
     }
     
-    
+
+    .flex-container .nav .nav-link {
+        background-color: rgba(187, 187, 187, 0.342);
+        color: rgb(175, 175, 175);
+        margin: 0.15em;
+        }
+
+    .flex-container .nav .nav-item .active {
+        background-color: #e1a556;
+        color: rgb(243, 243, 243);
+    }
+
+    .flex-container .btn-primary {
+        border: none;
+        background-color: #e1a556;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
 
 
-
-/* EN ESTA LINEA FUNDARE MI ONHOVER
- */
-
-
-
- .flex-container .nav .nav-link {
-    background-color: rgba(187, 187, 187, 0.342);
-    color: rgb(175, 175, 175);
-    margin: 0.15em;
-      }
-
-.flex-container .nav .nav-item .active {
-    background-color: #e1a556;
-    color: rgb(243, 243, 243);
-}
-
-/*     .container button {
-    border: none;
-    background-color: #e1a556;
-    color: rgb(243, 243, 243);
-}
-*/
-
-.flex-container .btn-primary {
-    border: none;
-    background-color: #e1a556;
-    color: rgb(29, 29, 29);
-    border-radius: 5px;
-}
+    .flex-container .btn-primary:hover,
+    .container .btn-primary:focus-visible {
+        border: none;
+        background-color: #946e3c;
+        color: rgb(243, 243, 243);
+    }
 
 
-.flex-container .btn-primary:hover,
-.container .btn-primary:focus-visible {
-    border: none;
-    background-color: #946e3c;
-    color: rgb(243, 243, 243);
-}
+    .flex-container .btn-secondary {
+        border: none;
+        background-color: #94979c;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
 
 
-.flex-container .btn-secondary {
-    border: none;
-    background-color: #94979c;
-    color: rgb(29, 29, 29);
-    border-radius: 5px;
-}
-
-
-.flex-container .btn-secondary:hover,
-.flex-container .btn-secondary:focus-visible {
-    border: none;
-    background-color:#404349;
-    color: rgb(243, 243, 243);
-}
-
-
-
-/* TAMPOCO  */
-
+    .flex-container .btn-secondary:hover,
+    .flex-container .btn-secondary:focus-visible {
+        border: none;
+        background-color:#404349;
+        color: rgb(243, 243, 243);
+    }
 
 
     .container .card-img-top {
@@ -190,34 +159,12 @@
     }
 
 
-
-    /* COMIENZAN ANIMACIONES DE CARDS DE CAPACITACIONES */
-
-
-/*     .anima-capacita {
-        cursor: pointer;
-        background-color: rgb(192, 35, 29);
-        opacity: 1;
-        transition: background-color ease-out 1500ms,
-                    opacity ease-in-out 1200ms;
-    }
-
-    .anima-capacita:hover {
-        background-color: #041840;
-        opacity: 1;
-    } */
-
-
-
-
         .card__animada {
             cursor: pointer;
             position: absolute;
             background-color: #e156a2;
         }
 
-    /*         SOLO TUVE QUE QUITAR EL CARD__ANIMADA::AFTER DESPUES DE LA COMA EN LA SIGUIENTE LINEA
- */
         .card__animada::before{
           content: '';
           position: absolute;
@@ -226,8 +173,6 @@
           right: 7.5em;
           left: 7.5em;
           border-radius: 10px;
-
-          
         }
         
         .card__animada::before {
@@ -304,14 +249,6 @@
 
 
         
-
-
-
-    /* COMIENZAN ANIMACIONES DE CARDS DE CAPACITACIONES */
-
-
-
-
     .navbar {
         background-image: radial-gradient(farthest-corner at 40px 40px, #e1a556, #E9BC45);
 /*         background-image: linear-gradient(to left, #e1a556, #dbbd96af, #E9BC45);
@@ -351,6 +288,7 @@
     .puerco-video {
         min-height: 70svh;
         max-height: 80svh;
+        min-width: auto;
     }
 
     .centrado {
@@ -365,15 +303,10 @@
         font-weight: 700;
         text-align: center;
         border-radius: 5px;
-
-/*         background-color: #403b6e;
-        color: #1c4235;
-        border: 10px solid #201c42; */
       }
 
       .item-1 {
-        margin-left: 1em;/* 
-        flex: 0; */
+        margin-left: 1em;
       }
 
       .item-2 {
@@ -390,7 +323,8 @@
         flex-direction: row;
         width: 80%;
         min-height: 80svh;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         justify-content:space-evenly;
         align-items: center;
         gap: 0.5em;
@@ -493,14 +427,20 @@
     .puerco-video {
         min-height: 50svh;
         max-height: 50svh;
+        min-width: auto;
     }
     
 
     /* ESTO YA ESTA PERFECTO NO TOQUES */
     .flex-container {
+        display: flex;
         flex-direction: column;
+        width: 80%;
+        min-height: auto;
+        margin-left: auto;
+        margin-right: auto;
         justify-content:space-evenly;
-        height: auto;
+        align-items: center;
         gap: 0em;
       }
 
@@ -513,10 +453,6 @@
         border-radius: 5px;
         margin-top: auto;
         margin-bottom: auto;
-        
-/*         background-color: #403b6e;
-        border: 10px solid #201c42;
-        color: #1c4235; */
       }
 
       .item-1 {
@@ -575,7 +511,7 @@
 
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1280px)  {
+    @media only screen and (min-width: 768px) and (max-width: 950px)  {
         .alto {
             min-height: 400px;
         }
@@ -601,9 +537,8 @@
             right: 1.5em;
             left: 1.5em;
             border-radius: 10px;
-    
-            
           }
+
           .titulo-especial {
             font-size: calc(12px + 0.390625vw);
             font-weight: 700;
@@ -614,24 +549,97 @@
         }
         .puerco-video {
             min-height: 40svh;
+            min-width: 60svw;
         }
 
-/*         .flex-container {
-            flex-direction: row;
-            justify-content:space-evenly;
-            height: 85svh;
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            min-height: 85svh;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content:center;
+            align-items: center;
+            gap: 0em;
           }
 
-        .item {
-            width: 70svw;
-            height: 50%;
-            background-color: #fb7185;
-            padding: 1em;
-            font-weight: 700;
-            color: #1c4235;
-            text-align: center;
-            border: 10px solid #fbf971;
-            border-radius: 5px;
-          } */
+          
+        .rapper {
+            display: flex;
+            flex-direction: column;
+            min-height:fit-content;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            
+        }
+
+        .inner-rapper {
+            display: flex;
+            flex-direction: column;
+            min-height:fit-content;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+        }
+
+        .rappervid {
+            display: flex;
+            flex-direction: column;
+            max-height:fit-content;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+        }
+
+        .inner-rappervid {
+            display: flex;
+            flex-direction: column;
+            max-height:fit-content;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+
+        .flex-container .nav .nav-link {
+            background-color: rgba(187, 187, 187, 0.342);
+            color: rgb(175, 175, 175);
+            min-width: 60svw;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+              }
+
+
+
+    
+        .flex-container .nav .nav-item .active {
+            background-color: #e1a556;
+            color: rgb(243, 243, 243);
+            justify-content: center;
+            min-width: 60svw;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .item-1 {
+            margin-left: 0em;
+            flex: 0.15;
+          }
+    
+          .item-2 {
+            margin-right: 0em;
+            flex: 1;
+          }
+
+
     }
 
