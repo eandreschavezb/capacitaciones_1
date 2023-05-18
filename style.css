@@ -285,7 +285,7 @@
         pointer-events: all;
     }
 
-    .puerco-video {
+    .contenedor-video {
         min-height: 70svh;
         max-height: 80svh;
         min-width: auto;
@@ -305,7 +305,18 @@
         border-radius: 5px;
       }
 
-      .item-1 {
+    .cosa {
+        display: flex;
+        min-width: 60svw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+/*       .item-1 {
         margin-left: 1em;
       }
 
@@ -314,9 +325,9 @@
         flex: 1;
       }
 
-      .item-3 {/* 
-        flex: 0; */
-      }
+      .item-3 {
+
+      } */
 
       .flex-container {
         display: flex;
@@ -356,6 +367,13 @@
         flex-direction: column;
         min-height: 20em;
         justify-content: center;
+      }
+
+
+
+
+      .la-huea-de-video {
+
       }
 
       
@@ -424,7 +442,7 @@
         font-size: calc(12px + 0.390625vw);
     }
 
-    .puerco-video {
+    .contenedor-video {
         min-height: 50svh;
         max-height: 50svh;
         min-width: auto;
@@ -455,9 +473,9 @@
         margin-bottom: auto;
       }
 
-      .item-1 {
+/*       .item-1 {
         margin-left: 0em;
-        /* flex: 0; */
+
       }
 
       .item-2 {
@@ -466,8 +484,10 @@
       }
 
       .item-3 {
-        /* flex: 0; */
-      }
+        
+      } */
+
+
       .rapper {
         display: flex;
         flex-direction: column;
@@ -509,6 +529,18 @@
         margin: 0em;
           }
 
+          .cosa {
+            display: flex;
+            min-width: 80svw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            aspect-ratio: 16/9;
+    
+        }
+
     }
 
     @media only screen and (min-width: 768px) and (max-width: 950px)  {
@@ -547,7 +579,7 @@
         .parrafo-especial {
             font-size: calc(9px + 0.390625vw);
         }
-        .puerco-video {
+        .contenedor-video {
             min-height: 40svh;
             min-width: 60svw;
         }
@@ -630,7 +662,19 @@
             margin-right: auto;
         }
 
-        .item-1 {
+        .cosa {
+            display: flex;
+            min-width: 70svw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            aspect-ratio: 16/9;
+    
+        }
+
+/*         .item-1 {
             margin-left: 0em;
             flex: 0.15;
           }
@@ -638,7 +682,7 @@
           .item-2 {
             margin-right: 0em;
             flex: 1;
-          }
+          } */
 
 
     }

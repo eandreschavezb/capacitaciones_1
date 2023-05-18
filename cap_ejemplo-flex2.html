@@ -14,6 +14,10 @@
                 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
                 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+      .container {
+        min-width: 70svw; 
+        min-height: 80svh ;
+      }
 
 
     </style>
@@ -50,7 +54,7 @@
 </head>
 <body class="fondo-general" style="font-family: 'Roboto Condensed', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="/cap_ejemplo-flex.html">
           <img class="logo-responsivo" src="img/logos.png" alt="logoindigo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -87,47 +91,81 @@
       </nav>
 
 
-  <div class="flex-container mt-3 rounded" style="background-color: #1d2046; color: white;">
-
-      <div class="item item-1 rapper">
-        <ul class="nav nav-pills inner-rapper" id="pills-tab" role="tablist">
-          <li class="nav-item my-1 my-md-0">
-            <a class="nav-link active" id="pills-personales-tab" data-toggle="pill" href="#pills-personales" role="tab" aria-controls="pills-personales" aria-selected="true">Introducción</a>
-          </li>
-          <li class="nav-item my-1 my-md-0">
-            <a class="nav-link" id="pills-academicas-tab" data-toggle="pill" href="#pills-academicas" role="tab" aria-controls="pills-academicas" aria-selected="false">Contenido</a>
-          </li>
-          <li class="nav-item my-1 my-md-0">
-            <a class="nav-link" id="pills-familiar-tab" data-toggle="pill" href="#pills-familiar" role="tab" aria-controls="pills-familiar" aria-selected="false">Evaluación</a>
-          </li>
-        </ul>
-      </div>
-      
-
-
-<!--       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-personales" role="tabpanel" aria-labelledby="pills-personales-tab"> -->
+      <!-- DIVIDIR AQUI -->
 
 
 
-      <div class="tab-content item item-2 rappervid" id="pills-tabContent">
-        <div class="tab-pane fade show active inner-rappervid" id="pills-personales" role="tabpanel" aria-labelledby="pills-personales-tab">
-          <iframe class="contenedor-video" src="https://www.youtube.com/embed/phWxA89Dy94" title="YouTube video player" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div class="container flex-container rounded my-3 my-lg-4" style="background-color: #1d2046; color: white;">
+
+<!--         <h1>Capacitaciones en bioseguridad</h1>
+      <hr> -->
+      <div class="row">
+        <div class="col-md-2 mb-3 text-center text-lg-left my-3 my-lg-0 ml-0 ml-lg-5">
+            <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+              <li class="nav-item p-1 p-md-0">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Introducción</a>
+              </li>
+              <li class="nav-item p-1 p-md-0">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Contenido</a>
+              </li>
+              <li class="nav-item p-1 p-md-0">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Evaluación</a>
+              </li>
+            </ul>
         </div>
       </div>
 
 
-      <div class="tab-content item item-2 rappervid" id="pills-tabContent">
-        <div class="tab-pane fade inner-rappervid" id="pills-academicas" role="tabpanel" aria-labelledby="pills-academicas-tab">
-          <iframe class="contenedor-video" src="https://www.youtube.com/embed/hxOdY8QOhZM?controls=0" title="YouTube video player" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <!-- /.col-md-4 -->
+        <div class="row">
+
+          <div class="col-10">
+
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show cosa active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="item-1">
+                  <h2>Introducción</h2>
+                  <p class="parrafo-especial">Instrucciones de como completar la capacitación</p>
+                  <iframe class="la-huea-de-video" style="height: 50svh;" width="90%" src="https://www.youtube.com/embed/PWoprUb1te8?controls=0" title="YouTube video player" 
+                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <div class="tab-pane fade cosa" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="item-1">
+                  <h2>Contenido</h2>
+                  <p class="parrafo-especial">Temas de los que trata la capacitación</p>
+                  <iframe class="la-huea-de-video" style="height: 50svh;" width="90%" src="https://www.youtube.com/embed/3Sk6PqEa0ZA?controls=0" title="YouTube video player" 
+                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <div class="tab-pane fade cosa" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="item-1">
+                  <h2>Evaluación</h2>
+                  <p class="parrafo-especial">Se prueba lo que no has aprendido durante el video-</p>
+                  <iframe class="la-huea-de-video" style="height: 50svh;" width="90%" src="https://www.youtube.com/embed/hxOdY8QOhZM?controls=0" title="YouTube video player" 
+                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
       </div>
 
+      </div>
+    </div>
 
-  </div>
-
-
+    
 </body>
 </html>
