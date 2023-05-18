@@ -54,7 +54,7 @@
 </head>
 <body class="fondo-general" style="font-family: 'Roboto Condensed', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/cap_ejemplo-flex.html">
+        <a class="navbar-brand" href="/index.html">
           <img class="logo-responsivo" src="img/logos.png" alt="logoindigo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -132,6 +132,19 @@
                           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                           allowfullscreen>
                   </iframe>
+
+                  <div class="d-flex row" style="justify-content: space-around;">
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" style="opacity: 0;line-height: 0.9;"
+                      data-toggle="modal" data-target="#exampleModal">ATRAS</button> 
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" 
+                      style="line-height: 0.9;" id="profile-tab"
+                      data-toggle="tab" href="#profile">ADELANTE</button> 
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
 
@@ -143,28 +156,93 @@
                           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                           allowfullscreen>
                   </iframe>
+                  <div class="d-flex row" style="justify-content: space-around;">
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" 
+                      style="line-height: 0.9;" id="profile-tab"
+                      data-toggle="tab" href="#home">ATRAS</button> 
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" 
+                      style="line-height: 0.9;" id="profile-tab"
+                      data-toggle="tab" href="#contact">ADELANTE</button> 
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="tab-pane fade cosa" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="item-1">
                   <h2>Evaluación</h2>
-                  <p class="parrafo-especial">Se prueba lo que no has aprendido durante el video-</p>
-                  <iframe class="la-huea-de-video" style="height: 50svh;" width="90%" src="https://www.youtube.com/embed/hxOdY8QOhZM?controls=0" title="YouTube video player" 
-                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          allowfullscreen>
-                  </iframe>
+                  <p class="normal">
+                    A continuación se le realizará un cuestionario sobre los temas tratados en el video. Pulse "RENDIR" para continuar.</p>
+
+                  <div class="d-flex row" style="justify-content: space-around;">
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" 
+                      style="line-height: 0.9;" id="profile-tab"
+                      data-toggle="tab" href="#profile">ATRAS</button> 
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2">
+                      <button type="button" class="btn btn-primary mt-2 mb-2 w-100 mx-auto" 
+                      style="line-height: 0.9;"
+                      data-toggle="modal" data-target="#exampleModal">RENDIR</button> 
+                    </div>
+                  </div>
                 </div>
               </div>
 
             </div>
 
           </div>
-
+ 
       </div>
 
       </div>
     </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" 
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Advertencia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="line-height: 1;">
+            <div class="py-4">
+              <h4>Reglas para rendir el examen</h4>
+                <p class="normal">1. Asegurarse de tener una conexión estable: 
+                  Los estudiantes deben asegurarse de tener una conexión a internet estable y una computadora 
+                  o dispositivo adecuado antes de comenzar el examen.
+                </p>
+                <p class="normal">2. No usar dispositivos adicionales: Los estudiantes deben cerrar todas las
+                   pestañas y programas que no estén relacionados con el examen antes de comenzar el examen.
+                </p>
+                <p class="normal">3. Cantidad de respuestas por pregunta: Se debe de respetar el maximo de
+                   respuesta permitidas en cada pregunta.
+                </p>
+                <p class="normal">4.No salir del examen: Una vez aceptados estos terminos usted no podra salir 
+                  del examen hasta terminarlo, si llega a cerrar el examen de cualquier manera, cerrando la pestaña, 
+                  navegador, haciendo click sobre la flecha hacia atras del navegador o incluso recargar la pagina, 
+                  automaticamente la nota de este examen sera 0/100.
+                </p>
+                
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+              <a type="button" class="btn btn-primary" style="text-decoration: none;" href="/formulario_pago.html"> Volver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     
 </body>
