@@ -376,6 +376,17 @@
 
       }
 
+
+      .anima-capacita {
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity ease-out 250ms;
+    }
+
+    .anima-capacita:hover {
+        opacity: 0.2;
+    }
+
       
 
     @media (max-width: 767px)  {
