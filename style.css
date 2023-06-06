@@ -105,7 +105,7 @@
 
 
     .flex-container .btn-primary:hover,
-    .container .btn-primary:focus-visible {
+    .flex-container .btn-primary:focus-visible {
         border: none;
         background-color: #946e3c;
         color: rgb(243, 243, 243);
@@ -161,8 +161,6 @@
 
         .card__animada {
             cursor: pointer;
-            position: absolute;
-            background-color: #e156a2;
         }
 
         .card__animada::before{
@@ -364,6 +362,71 @@
         opacity: 0.2;
     }
 
+
+    
+
+
+
+
+/* ancor */
+
+
+
+
+
+
+    .modal .btn-primary {
+        border: none;
+        background-color: #e1a556;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
+
+
+    .modal .btn-primary:hover,
+    .modal .btn-primary:focus-visible,
+    .modal .btn-secondary:active {
+        border: none;
+        background-color: #946e3c;
+        color: rgb(243, 243, 243);
+    }
+
+
+    .modal .btn-secondary {
+        border: none;
+        background-color: #94979c;
+        color: rgb(29, 29, 29);
+        border-radius: 5px;
+    }
+
+
+    .modal .btn-secondary:hover,
+    .modal .btn-secondary:focus-visible,
+    .modal .btn-secondary:active {
+        border: none;
+        background-color:#404349;
+        color: rgb(243, 243, 243);
+    }
+    
+
+/*     .nav .nav-link {
+        color: #c300ff;
+    } */
+
+/*     .page-link {
+        text-decoration: none;
+        color: #e156a2;
+    } */
+
+    .page-item .page-link {
+        color: #946e3c;
+    }
+
+    .page-item .page-link:hover,
+    .page-item .page-link:focus-visible,
+    .page-item .page-link:active {
+        color: #e1a556;
+    }
       
 
     @media (max-width: 767px)  {
