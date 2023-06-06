@@ -19,7 +19,7 @@
     }
 
     .fondo-general {
-        background-image: url("img/tex-02.png");
+        background-image: url("img/UNT-1-02-02.png");
         background-attachment: fixed;
         mix-blend-mode:normal;
     }
@@ -427,12 +427,50 @@
     .page-item .page-link:active {
         color: #e1a556;
     }
+
+    .color-fondo {
+        object-fit: cover;
+        background-image:radial-gradient(at right 10%,  #2d4076, #457aa1 , #596983 , #323c4a, #2d4076);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    /* url("/img/TEST-01.png"),  */
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70svh;
+    }
+
+    .barra-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
       
 
     @media (max-width: 767px)  {
         .titulo-raro {
          line-height: 0.6;
          font-size: calc(22px + 0.390625vw);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 95svh;
+        }
+
+        .barra-titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .alto {
