@@ -144,7 +144,7 @@
     }    
 
     .iconos-responsivos {
-        max-height: 120px;
+        max-height: 25svh;
     }
 
     .menu-animacion {
@@ -438,18 +438,41 @@
 
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 70svh;
     }
 
     .barra-titulo {
-        display: flex;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .card-home {
+        display: flex;
+        flex-direction: column;/* 
+        min-width: 20svw; */
+    }
+
+    .card-deck {
+        margin-bottom: 2svh;
     }
       
+
+/*     @media (max-width: 375px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+        }
+    } */
+
 
     @media (max-width: 767px)  {
         .titulo-raro {
@@ -462,7 +485,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 95svh;
+            min-height: 95svh;
         }
 
         .barra-titulo {
@@ -620,6 +643,15 @@
     @media only screen and (min-width: 768px) and (max-width: 950px)  {
         .alto {
             min-height: 400px;
+        }
+        
+        .card-home {
+            display: flex;
+            flex-direction: column;/* 
+            min-width: 40svw; */
+    }
+        .iconos-responsivos {
+            max-height: 12svh;
         }
         .container .card-img-top {
             background-color: #e1a556;
