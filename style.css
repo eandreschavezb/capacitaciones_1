@@ -11,7 +11,9 @@
 }
 
     body {
-        max-height: 120svh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     .esquinas {
@@ -22,6 +24,7 @@
         background-image: url("img/UNT-1-02-02.png");
         background-attachment: fixed;
         mix-blend-mode:normal;
+        height: 100%;
     }
 
     .muevete-arriba {
@@ -144,7 +147,7 @@
     }    
 
     .iconos-responsivos {
-        max-height: 25svh;
+        max-height: 22svh;
     }
 
     .menu-animacion {
@@ -208,10 +211,6 @@
           transform: scale(1, 1);
         }
       
-
-        .descole {
-            isolation: isolate;
-        }
 
         .titulo-especial {
             font-size: calc(10px + 0.390625vw);
@@ -461,6 +460,16 @@
     .card-deck {
         margin-bottom: 2svh;
     }
+
+
+    .titulos-cards {
+        font-size: 1.5rem;
+    }
+
+    .textos-aids {
+        font-size: 1.1rem;
+        color: #ececec;
+    }
       
 
 /*     @media (max-width: 375px) {
@@ -480,6 +489,10 @@
          font-size: calc(22px + 0.390625vw);
         }
 
+        .textos-aids {
+            font-size: 1rem;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -497,11 +510,11 @@
         }
 
         .alto {
-            min-height: 90vh;
+            min-height: auto;
         }
 
         body {        
-            max-height: 150svh;
+            max-height: auto;
         }
 
         .iconos-responsivos {
@@ -644,6 +657,11 @@
         .alto {
             min-height: 400px;
         }
+        
+        .textos-aids {
+            font-size: 1.4rem;
+        }
+          
         
         .card-home {
             display: flex;
