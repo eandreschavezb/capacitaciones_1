@@ -46,7 +46,7 @@
 
     <title>Capacitaciones Grupo Birrería</title>
 </head>
-<body class="fondo-general" style="font-family: 'Roboto Condensed', sans-serif;">
+<body class="fondo-general" style="background-size: cover; font-family: 'Roboto Condensed', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/index.html">
           <img class="logo-responsivo" src="img/logos.png" alt="logoindigo">
@@ -85,7 +85,7 @@
       </nav>
 
 
-  <div class="container p-5 mt-2 mt-md-4 mb-3 rounded" style="transform: translateY(0px); max-width:95svw; min-height: 80svh; background-color: #1d2046; color: white;">
+  <div class="container color-fondo2 p-5 mt-2 mt-md-4 mb-3 rounded" style="transform: translateY(0px); max-width:95svw; min-height: 80svh; background-color: #1d2046; color: white;">
 
 
     <div class="tab-content" id="pills-tabContent">
@@ -93,11 +93,14 @@
       <div class="tab-pane fade show active" id="primera-pagina" role="tabpanel" aria-labelledby="primera-pagina-tab">
 
         <div class="row">
-          <div class="col pb-3 pt-3">
+          <div class="col pb-3 pt-3 fondo-headers">
             <h1 style="line-height: 0.8;">PÁGINA 1</h1>
             <h6>Se muestran a continuación las capacitaciones creadas hasta el momento.</h6>
           </div>
         </div>
+
+        <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
         <div class="d-flex flex-column text-center">
           <div class="mx-0 mx-md-auto">
               <table class="table table-responsive"  
@@ -164,11 +167,11 @@
                         </tbody>
               </table>
           </div>
-      </div>  
+        </div>  
 
 
 
-</div>
+      </div>
 
 
     <div class="tab-pane fade" id="segunda-pagina" role="tabpanel" aria-labelledby="segunda-pagina-tab">
@@ -177,11 +180,14 @@
       
 
       <div class="row">
-        <div class="col pb-3 pt-3">
+        <div class="col pb-3 pt-3 fondo-headers">
           <h1 style="line-height: 0.8;">PÁGINA 2</h1>
           <h6>Se muestran a continuación las capacitaciones creadas hasta el momento.</h6>
         </div>
       </div>
+
+      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
 
       <div class="d-flex flex-column text-center">
         <div class="mx-0 mx-md-auto">
@@ -265,11 +271,14 @@
       
 
       <div class="row">
-        <div class="col pb-3 pt-3">
+        <div class="col pb-3 pt-3 fondo-headers">
           <h1 style="line-height: 0.8;">PÁGINA 3</h1>
           <h6>Se muestran a continuación las capacitaciones creadas hasta el momento.</h6>
         </div>
       </div>
+
+      <hr style="border-top: 1px solid rgb(116, 116, 116);">
+
 
       <div class="d-flex flex-column text-center">
         <div class="mx-0 mx-md-auto">
@@ -562,7 +571,7 @@
               
                           <button 
                             type="submit" 
-                            class="btn btn-primary w-100">
+                            class="btn w-100">
                             Guardar módulo
                           </button>
               
@@ -610,8 +619,8 @@
 
    </div>
    <div class="modal-footer">
-     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-       <a type="button" class="btn btn-primary" style="text-decoration: none;" href="/formulario_pago.html">Crear capacitación</a>
+     <button type="button" class="btn btnsec" style="text-decoration: none; border: none;" href="/crear_capacitaciones.html">Cancelar</button>
+       <button type="button" class="btn" style="text-decoration: none; border: none;" href="/crear_capacitaciones.html">Crear capacitación</button>
    </div>
  </div>
 </div>
