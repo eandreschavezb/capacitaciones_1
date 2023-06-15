@@ -17,12 +17,16 @@
         overflow-x: hidden;
     }
 
+/*     nav {
+        background-image: url("img/fongo-3.png");
+    }
+ */
     .esquinas {
         border-radius: 0px;
     }
 
     .fondo-general {
-        background-image: url("img/UNT-1-02-02.png");
+        background-image: url("img/try1-01.png");
         background-attachment: fixed;
         mix-blend-mode:normal;
         height: 100%;
@@ -160,7 +164,7 @@
     }
 
     .container .card-body {
-        background-color: #c7c7c7;
+        background-color: #eeeeee;
         color:#041840;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -210,8 +214,8 @@
           transform: scale(0);
           box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.884);
 
-          transition: transform ease-in-out 300ms,
-                      opacity ease-in-out 200ms;
+          transition: transform ease-in-out 100ms,
+                      opacity ease-in-out 75ms;
         }
         
         .card__animada::after {
@@ -226,8 +230,8 @@
         .card__animada:hover::before {
           opacity: 0.95;
           transform: scale(1, 1);
-          transition: transform ease-in-out 300ms,
-
+          transition: transform ease-in-out 200ms, /* ESTO NO CONTROLA CRECIMIENTO DE PSEUDO */
+                      opacity ease-in-out 300ms;
           
         }
         
@@ -255,11 +259,11 @@
             transform: translate(-50%, -50%);
             color: #201c42;
             opacity: 0;
-            transition: 
-            opacity ease-out 500ms;
+            transition: opacity ease-out 50ms;
        }
         .card:hover .card__text {
             opacity: 1;
+            transition: opacity ease-out 500ms;
        }
         .card__title {
             font-size: 2em;
@@ -275,7 +279,11 @@
         
     .navbar {
 /*         background-image: radial-gradient(farthest-corner at 40px 40px, #e1a556, #E9BC45);
- */        background-image: linear-gradient(15deg, #E9BC45, #E9BC45);
+ */        /* background-image: url("img/fongo-3.png"), linear-gradient(15deg, #E9BC45, #E9BC45); */
+           background-image: linear-gradient(15deg, #E9BC45, #E9BC45);
+           /* background-size: cover;
+           mix-blend-mode: none; */
+           
     }
 
     .container .card-body h4 {
@@ -297,8 +305,8 @@
 
 
     .progress .progress-bar {
-        background-color:#E9BC45;
-        color:#041840;
+        background-color:#36424d;
+        color:#f0f0f0;
     }
 
     .no-clicky {
@@ -765,7 +773,7 @@
       .titulo-especial {
         font-size: calc(15px + 0.390625vw);
         font-weight: 700;
-        line-height:normal;
+        line-height:0.9;
     }
 
     .parrafo-especial {
