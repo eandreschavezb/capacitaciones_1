@@ -455,10 +455,14 @@
         display: flex;
         flex-direction: column;/* 
         min-width: 20svw; */
+        background-image: radial-gradient(at right 10%, #59698311 ,#2d407611, #457ba111, #323c4a1e, #2d407625);
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .card-deck {
         margin-bottom: 2svh;
+        width: 75svw;
     }
 
 
@@ -468,6 +472,8 @@
 
     .textos-aids {
         font-size: 1.1rem;
+        padding-right: 2.2svw;
+        padding-left: 2.2svw;
         color: #ececec;
     }
       
@@ -491,6 +497,13 @@
 
         .textos-aids {
             font-size: 1rem;
+            padding-right: 7svw;
+            padding-left: 7svw;
+        }
+
+        .card-deck {
+            margin-bottom: 2svh;
+            width: 100svw;
         }
 
         .container {
@@ -653,6 +666,21 @@
 
     }
 
+
+    @media only screen and (min-width: 951px) and (max-width: 1280px) {
+        .card-deck {
+            margin-bottom: 2svh;
+            width: 95svw;
+        }
+        .textos-aids {
+            font-size: 1rem;
+            padding-right: 0.5svw;
+            padding-left: 0.5svw;
+        }
+    }
+
+
+
     @media only screen and (min-width: 768px) and (max-width: 950px)  {
         .alto {
             min-height: 400px;
@@ -660,6 +688,13 @@
         
         .textos-aids {
             font-size: 1.4rem;
+            
+        }
+
+        
+        .card-deck {
+            margin-bottom: 2svh;
+            width: 100svw;
         }
           
         
