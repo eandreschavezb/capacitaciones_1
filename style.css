@@ -26,7 +26,7 @@
     }
 
     .fondo-general {
-        background-image: url("img/try1-01.png");
+        background-image: url("img/TEXT10-02.png");
         background-attachment: fixed;
         mix-blend-mode:normal;
         height: 100%;
@@ -633,6 +633,30 @@
     color: #ffffff;
     font-weight: 700;
   }
+
+
+  .el-rrapper {/* 
+    position: absolute; */
+    left: 87%;
+    top: 22%;
+    bottom: 0%;
+    z-index: 999;
+  }
+
+  .boton-salida {
+    position: absolute;
+    left: 88svw;
+
+    top: 20svh;
+
+    width: 5svw;
+    height: 5vsw; 
+  }
+
+  .texto-salida {
+        font-size: calc(5px + 0.390625vw);
+  }
+
       
 
 /*     table, .table, .table-responsive {
@@ -656,6 +680,34 @@
  */
 
     @media (max-width: 767px)  {
+
+        .texto-salida {
+            font-size: calc(7px + 0.390625vw);
+      }
+
+        .el-rrapper {
+            position: absolute;
+            left: 82%;
+            top: 88%;
+            bottom: 0%;
+            z-index: 999;
+            font-size: x-small;
+          }
+        
+          .boton-salida {
+            position: absolute;
+            left: 80svw;
+
+            top: 88svh;
+
+            width: 5svw;
+            height: 5vsw;
+        
+            
+          }
+  
+
+
         .titulo-raro {
          line-height: 0.6;
          font-size: calc(22px + 0.390625vw);
@@ -882,6 +934,31 @@
         .container .nav .nav-item .active {
             color: #323c4a;
         }
+
+        .texto-salida {
+            font-size: calc(10px + 0.390625vw);
+      }
+
+        .el-rrapper {/* 
+            position: absolute; */
+            left: 85%;
+            top: 20%;
+            bottom: 0%;
+            z-index: 999;
+            font-size: x-small;
+          }
+        
+          .boton-salida {
+            position: absolute;
+            left: 80svw;
+
+            top: 10svh;
+
+            width: 5svw;
+            height: 5vsw;
+        
+            
+          }
         
     }
 
